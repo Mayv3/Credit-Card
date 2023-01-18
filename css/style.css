@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor-padre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.card{
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    z-index: 50;
+    transition: all 0.5s;
+}
+.card.active{
+    transform: rotateY(180deg);
+}
+.card-front{
+    padding: 15px;
+    background-image: url(../img/bg-tarjeta/bg-tarjeta-01.jpg);
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    position: relative;
+}
+.marca{
+   display: flex;
+   justify-content: flex-end;
+   width: 100%;
+  
+}
+.marca img{
+    width: 100px;
+    position: relative;
+    left: 12px;
+}
+.chip{
+    display: block;
+    padding: 15px 0px;
+}
+.chip img{
+    width: 55px;
+}
+label{
+    color: yellow;
+    font-size: 16px;
+}
+p{
+    color: white;
+    font-size: 28px;
+}
+.contendor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-back{
+    background-image: url(../img/bg-tarjeta/bg-tarjeta-02.jpg);
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    position: relative;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+}
+.barra-magnetica{
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    margin-top: 45px;   
+}
+.contenedor-1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    margin-top: 15px;
+}
+.barra-1{
+    background-color: white; 
+    width: 350px;
+    height: 34px;
+    padding: 3px;
+}
+.contenedor-2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0px 30px;
+    margin-top: 15px;
+}
+.p{
+    font-size: 20px;
+    width: 450px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+button{
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    z-index: 500;
+    position: relative;
+    top: -20px;
+}
